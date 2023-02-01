@@ -1,0 +1,34 @@
+.place__paragraph {
+    grid-area: paragraph;
+    max-width: 484px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 27px;
+    font-family: 'Inter', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.63;
+    color: #ffffff;
+}
+
+@media (max-width: 1279px) {
+    .place__paragraph {
+       min-width: 456px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .place__paragraph {
+        min-width: 352px;
+        row-gap: 25px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .place__paragraph {
+        min-width: calc(100% - 32px);
+        margin: 0 16px;
+    }
+}
